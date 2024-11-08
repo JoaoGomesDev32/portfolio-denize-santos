@@ -9,8 +9,16 @@
         </v-form>
 
         <h3>Redes Sociais</h3>
-        <v-btn v-for="(link, name) in socialLinks" :key="name" :href="link" target="_blank" icon>
-        <v-icon>{{ name }}</v-icon>
+        <v-btn
+            v-for="(link, name) in socialLinks"
+            :key="name"
+            :href="link"
+            target="_blank"
+            icon
+        >
+            <v-icon v-if="name === 'facebook'" color="blue">mdi-facebook</v-icon>
+            <v-icon v-else-if="name === 'instagram'" color="purple">mdi-instagram</v-icon>
+            <v-icon v-else color="green">mdi-whatsapp</v-icon>
         </v-btn>
     </v-container>
 </template>
@@ -25,7 +33,7 @@
                 socialLinks: {
                 facebook: 'https://facebook.com/denizesantos',
                 instagram: 'https://instagram.com/denizesantos',
-                linkedin: 'https://linkedin.com/in/denizesantos'
+                whatsapp: 'https://wa.me/551999999999'
                 }
             };
         },

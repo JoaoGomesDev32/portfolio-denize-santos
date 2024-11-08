@@ -13,7 +13,18 @@ import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
 
 export default {
+  name: 'App',
   components: { Navbar, Footer }
 };
 </script>
 
+<style>
+  /* .v-app-bar {
+  background-color: #D50000 !important;
+}
+
+.v-footer {
+  background-color: #D50000 !important;
+} */
+
+</style>
