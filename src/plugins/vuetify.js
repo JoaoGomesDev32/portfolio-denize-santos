@@ -11,9 +11,10 @@ const vuetify = createVuetify({
     themes: {
       light: {
         colors: {
-          primary: '#D50000',  // Vermelho
-          secondary: '#FFEB3B', // Amarelo
-          accent: '#000000'     // Preto
+          primary: '#D50000',
+          secondary: '#FFEB3B',
+          accent: '#FF9800',
+          background: '#FFFFFF',
         }
       }
     }

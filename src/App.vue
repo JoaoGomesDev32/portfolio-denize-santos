@@ -1,30 +1,31 @@
 <template>
   <v-app>
     <Navbar />
-    <v-main>
-      <router-view></router-view>
-    </v-main>
+    <Hero />
+    <About />
+    <Services />
+    <Contact />
     <Footer />
   </v-app>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue';
+import Hero from './components/Hero.vue';
+import About from './components/About.vue';
+import Services from './components/Services.vue';
+import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
-  components: { Navbar, Footer }
+  components: { 
+    Navbar,
+    Hero,
+    About,
+    Services,
+    Contact,
+    Footer,
+  }
 };
 </script>
-
-<style>
-  /* .v-app-bar {
-  background-color: #D50000 !important;
-}
-
-.v-footer {
-  background-color: #D50000 !important;
-} */
-
-</style>
